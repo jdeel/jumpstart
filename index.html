@@ -4,44 +4,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jumpstart</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
+
+    <!-- Google font selections -->
     <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <!-- Reset CSS -->
     <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <!-- Slick carousel stylesheet -->
+    <link rel="stylesheet" type="text/css" href="resources/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/slick/slick-theme.css"/>
+
+   <!-- CSS stylesheet -->
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+
   </head>
+
   <body>
-    <header>
-
-      <!-- Researched structure
-      <nav class="nav justify-content-between">
-        <div class="nav nav-item ">
-          <a class="nav-link active" href="#">Explore</a>
-          <a class="nav-link" href="#">Start a project</a>
-          <a class="nav-link" href="#">About us</a>
-        </div>
-        <a class="navbar-brand d-none d-sm-block" href="#"><img alt="Jumpstart" src="resources/images/logo.png" /></a>
-      </nav> -->
-
-      <!-- Codecademy guided structure -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <ul class="nav navbar flex-xs-column">
-          <li class="active"><a href="#">Explore</a></li>
-          <li><a href="#">Start a project</a></li>
-          <li><a href="#">About us</a></li>
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <ul class="nav navbar flex-xs-column" role="menubar">
+          <li class="active" role="menuitem"><a href="#">Explore</a></li>
+          <li role="menuitem"><a href="#">Start a project</a></li>
+          <li role="menuitem"><a href="#">About us</a></li>
         </ul>
-        <a class="navbar-brand navbar-right d-none d-md-block" href="#"><img src="resources/images/logo.png" /></a>
+        <a class="navbar-brand navbar-right d-none d-md-block" href="#"><img src="resources/images/logo.png" alt="Jumpstart"/></a>
       </nav>
 
-      <div class="jumbotron jumbotron-bike">
-        <h1>Get Going.</h1>
-        <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+    <header role="banner">
+      <!-- Jumbotron carousel -->
+      <div class="carousel">
+        <div class="jumbotron jumbotron-bike">
+          <h1>GET GOING.</h1>
+          <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+        </div>
+
+        <div class="jumbotron jumbotron-beer">
+          <h1>GET THINKING.</h1>
+          <p>Meet like-minded individuals who will help fuel your creative juices.</p>
+        </div>
+
+        <div class="jumbotron jumbotron-flowers">
+          <h1>GET CREATING.</h1>
+          <p>Stop overthinking projects and begin putting them out into the world.</p>
+        </div>
+
+        <div class="jumbotron jumbotron-duffel">
+          <h1>GET STARTED.</h1>
+          <p>What are you waiting for? Today's the day for your next big idea.</p>
+        </div>
+      </div>
+
+      <div class="relative-wrapper">
         <button class="btn-primary btn-lg" href="#">Jump in</button>
       </div>
     </header>
 
-    <main class="container">
+    <main class="container" role="main">
+
+      <!-- Featured project section -->
       <section class="featured-project">
         <header><h2>Featured project</h2></header>
         <div class="content row">
@@ -80,6 +108,7 @@
         </div>
       </section>
 
+      <!-- Projects section -->
       <section class="projects">
         <header><h2>Projects</h2></header>
         <div class="content row">
@@ -110,17 +139,26 @@
 
     </main>
 
-    <div class="cta">
+    <!-- Final call to action -->
+    <footer class="cta">
       <strong>Having trouble thinking of an idea?</strong>
       <p>Inventor's block strikes at the worst times. But that's all changed with Jumpstart's Good Idea Generator Lite (GIGLi).</p>
       <button class="btn-primary btn-lg" href="#">Learn more</button>
-    </div>
+    </footer>
 
+    <!-- Javascript -->
+
+    <!-- jQuery CDN -->
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="resources/js/main.js"></script>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="resources/slick/slick.min.js"></script>
+
+    <!-- Main.js -->
+    <script src="resources/js/main.js"></script>
+
   </body>
 </html>
